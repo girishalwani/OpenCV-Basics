@@ -3,13 +3,14 @@ import numpy as np
 
 #read image
 img = cv2.imread("./new.jpg")
+cv2.imshow("img",img)
 
 #width , height and channels for image
-print("width => ",img.shape[0])
-print("height => ",img.shape[1])
+print("height => ",img.shape[0])
+print("width => ",img.shape[1])
 print("channels =>",img.shape[2])
 
-cv2.imshow("img",img)
+
 
 k = cv2.waitKey(0) & 0xFF
 
